@@ -19,5 +19,8 @@ main()
             printf("%s\n", location);
             free(location);
         }
+        if (strcmp(input, "cd") == 0) {
+            chdir(getenv("HOME"));
+        }
     }
 }
